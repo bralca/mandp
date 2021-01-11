@@ -5287,3 +5287,16 @@ h4 {
 
 }
 
+#homeImage{
+
+	width:100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+#homeImage{
+
+	width:100vh;
+	height: 10vh;
+}
+}
