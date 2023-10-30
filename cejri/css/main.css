@@ -1009,22 +1009,22 @@ ul.nostyle i {
     /* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .top-bar h1 {
-      font-size: 3vw;
+      font-size: 1.5vw;
   }
 
   .top-bar button {
-      font-size: 2.5vw;
+      font-size: 1.5vw;
   }
 }
 
 /* Adjustments for very small screens */
 @media (max-width: 480px) {
   .top-bar h1 {
-      font-size: 4vw;
+      font-size: 1vw;
   }
 
   .top-bar button {
-      font-size: 3vw;
+      font-size: 1vw;
     
   }
 }
