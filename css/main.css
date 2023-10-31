@@ -5298,3 +5298,69 @@ h4 {
 	height: 100vh;
 }
 }
+
+
+        /* Styling the top bar */
+        .top-bar {
+          width: 100%;
+          position: fixed;
+          top: 0;
+          z-index: 1031;
+          background-color: #2a95be;
+          color: #FFF;
+          display: flex; /* Use Flexbox layout */
+          justify-content: center; /* Center items horizontally */
+          align-items: center; /* Center items vertically */
+          padding: 5px 0;
+          height: 60px;
+      }
+      
+
+      .top-bar h1 {
+        font-size: 1.5vw;  /* Adjust to your preference */
+        color: #fff;
+        margin: 0 20px 0 0;  /* Removing default margin for consistent spacing */
+    }
+    
+
+      .top-bar button {
+          background-color: #00c3ff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 0;  /* Adjust padding to your preference */
+          margin:20px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+
+      .top-bar button:hover {
+          background-color: #47b2ff;
+      }
+
+      .new-navbar {
+        top: 45px; /* Assuming your sticky top bar is 50px in height, adjust accordingly */
+    }
+
+    /* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .top-bar h1 {
+      font-size: 3vw;
+  }
+
+  .top-bar button {
+      font-size: 2.5vw;
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+  .top-bar h1 {
+      font-size: 4vw;
+  }
+
+  .top-bar button {
+      font-size: 3vw;
+    
+  }
+}
