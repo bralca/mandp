@@ -1002,9 +1002,9 @@ ul.nostyle i {
           background-color: #47b2ff;
       }
 
-      .new-navbar {
-        top: 45px; /* Assuming your sticky top bar is 50px in height, adjust accordingly */
-    }
+/*       .new-navbar {
+        top: 45px; /* Assuming your sticky top bar is 50px in height, adjust accordingly 
+    } */
 
     /* Adjustments for smaller screens */
 @media (max-width: 768px) {
