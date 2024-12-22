@@ -121,12 +121,13 @@
       <footer id="footer">
         <div class="inner">
           <ul class="copyright">
-            <li>&copy; 2023 Istituto di Cure Medical & Psychology - All rights reserved </li>
+            <li>&copy; <span id="current-year"></span> Istituto di Cure Medical & Psychology - All rights reserved </li>
             <li>Via della pace, 1, 89032 Bianco RC </li>
             <li>P.Iva: 01365920808</li>
           </ul>
             <a class="copyright" href="//www.iubenda.com/privacy-policy/8007230" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-        </div>
+            <a class="copyright" href="https://whistlesblow.it/c/istituto-di-cure-medical-e-psychology/1">Whistleblowing Aziendale</a>
+	</div>
       </footer>
 
     <!-- Scripts -->
@@ -152,6 +153,7 @@
       ga('send', 'pageview');
 
   </script>
+  <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
 <!--   <script src="//load.sumome.com/" data-sumo-site-id="82ee214bdd517fbc99b0f6e316f5035dc5031850afb1ded006c6152188557005" async="async" style="height:5%"></script> -->
   
   
