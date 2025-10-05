@@ -125,6 +125,7 @@ header .header-content {
     position: relative;
     width: 100%;
     padding: 50px 15px;
+    padding-top: 110px; /* Add space for top banner (60px) + original padding */
     text-align: center;
     z-index: 2;
 }

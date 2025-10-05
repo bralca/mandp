@@ -5308,18 +5308,21 @@ h4 {
           z-index: 1031;
           background-color: #2a95be;
           color: #FFF;
-          display: flex; /* Use Flexbox layout */
-          justify-content: center; /* Center items horizontally */
-          align-items: center; /* Center items vertically */
-          padding: 5px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 20px;
           height: 60px;
+          gap: 20px;
       }
       
 
       .top-bar h1 {
-        font-size: 1.5vw;  /* Adjust to your preference */
+        font-size: 20px;
         color: #fff;
-        margin: 0 20px 0 0;  /* Removing default margin for consistent spacing */
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: 0.5px;
     }
     
 
@@ -5328,10 +5331,18 @@ h4 {
           color: #fff;
           border: none;
           border-radius: 5px;
-          padding: 0;  /* Adjust padding to your preference */
-          margin:20px;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 12px 30px;
           cursor: pointer;
           transition: background-color 0.3s ease;
+          white-space: nowrap;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
       }
 
       .top-bar button:hover {
@@ -5344,23 +5355,37 @@ h4 {
 
     /* Adjustments for smaller screens */
 @media (max-width: 768px) {
+  .top-bar {
+      gap: 10px;
+      padding: 5px 10px;
+  }
+
   .top-bar h1 {
-      font-size: 3vw;
+      font-size: 14px;
   }
 
   .top-bar button {
-      font-size: 2.5vw;
+      font-size: 12px;
+      padding: 10px 20px;
   }
 }
 
 /* Adjustments for very small screens */
 @media (max-width: 480px) {
+  .top-bar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+      gap: 8px;
+  }
+
   .top-bar h1 {
-      font-size: 4vw;
+      font-size: 12px;
+      text-align: center;
   }
 
   .top-bar button {
-      font-size: 3vw;
-    
+      font-size: 12px;
+      padding: 10px 20px;
   }
 }
