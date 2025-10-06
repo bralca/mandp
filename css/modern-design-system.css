@@ -473,7 +473,7 @@ a:focus-visible {
   transform: none !important;
 }
 
-/* Hero Section (#first) - Modern Professional Medical */
+/* Hero Section (#first) - Dynamic Modern Medical */
 header#first {
   position: relative;
   width: 100%;
@@ -482,83 +482,92 @@ header#first {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg,
-    #FAFBFC 0%,
-    #F4F7FA 30%,
-    #EEF2F7 60%,
-    #F8FAFC 100%);
-  padding-top: 0; /* No padding needed for floating banner */
+  background:
+    radial-gradient(circle at 20% 80%, rgba(5, 150, 105, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg,
+      #FFFFFF 0%,
+      #F8FAFC 30%,
+      #EEF6FF 60%,
+      #F0F9FF 100%);
+  padding-top: 0;
 }
 
-/* Creative Background Elements - Multiple Layers */
-/* Large blue gradient blob - top right */
+/* Large blue gradient blob - top right - MORE VIBRANT */
 header#first::before {
   content: '';
   position: absolute;
-  top: -20%;
-  right: -15%;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle,
-    rgba(37, 99, 235, 0.12) 0%,
-    rgba(37, 99, 235, 0.06) 40%,
-    rgba(37, 99, 235, 0.02) 70%,
-    transparent 100%);
-  border-radius: 50%;
-  z-index: var(--z-0);
-  animation: float 20s ease-in-out infinite;
-}
-
-/* Medium green gradient blob - bottom left */
-header#first::after {
-  content: '';
-  position: absolute;
-  bottom: -25%;
-  left: -20%;
+  top: -15%;
+  right: -10%;
   width: 900px;
   height: 900px;
   background: radial-gradient(circle,
-    rgba(5, 150, 105, 0.10) 0%,
-    rgba(5, 150, 105, 0.05) 40%,
-    rgba(16, 185, 129, 0.03) 70%,
+    rgba(37, 99, 235, 0.25) 0%,
+    rgba(59, 130, 246, 0.15) 30%,
+    rgba(96, 165, 250, 0.08) 60%,
     transparent 100%);
   border-radius: 50%;
   z-index: var(--z-0);
-  animation: float 25s ease-in-out infinite reverse;
+  animation: floatDynamic 20s ease-in-out infinite, pulse 8s ease-in-out infinite;
+  filter: blur(60px);
 }
 
-/* Additional decorative elements */
+/* Large green gradient blob - bottom left - MORE VIBRANT */
+header#first::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -15%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle,
+    rgba(5, 150, 105, 0.20) 0%,
+    rgba(16, 185, 129, 0.12) 30%,
+    rgba(52, 211, 153, 0.06) 60%,
+    transparent 100%);
+  border-radius: 50%;
+  z-index: var(--z-0);
+  animation: floatDynamic 25s ease-in-out infinite reverse, pulse 10s ease-in-out infinite 2s;
+  filter: blur(70px);
+}
+
+/* Orange accent - top left - MORE DYNAMIC */
 .hero-bg-accent-1 {
   position: absolute;
-  top: 15%;
-  left: 10%;
-  width: 300px;
-  height: 300px;
+  top: 10%;
+  left: 5%;
+  width: 500px;
+  height: 500px;
   background: radial-gradient(circle,
-    rgba(249, 115, 22, 0.08) 0%,
-    rgba(249, 115, 22, 0.03) 50%,
+    rgba(249, 115, 22, 0.18) 0%,
+    rgba(251, 146, 60, 0.10) 40%,
+    rgba(253, 186, 116, 0.04) 70%,
     transparent 100%);
   border-radius: 50%;
   z-index: var(--z-0);
-  animation: float 18s ease-in-out infinite;
+  animation: floatDynamic 18s ease-in-out infinite, rotate 40s linear infinite;
+  filter: blur(50px);
 }
 
+/* Blue accent - bottom right - MORE DYNAMIC */
 .hero-bg-accent-2 {
   position: absolute;
-  bottom: 20%;
-  right: 15%;
-  width: 400px;
-  height: 400px;
+  bottom: 15%;
+  right: 10%;
+  width: 600px;
+  height: 600px;
   background: radial-gradient(circle,
-    rgba(37, 99, 235, 0.06) 0%,
-    rgba(59, 130, 246, 0.03) 50%,
+    rgba(37, 99, 235, 0.15) 0%,
+    rgba(96, 165, 250, 0.08) 50%,
+    rgba(147, 197, 253, 0.04) 80%,
     transparent 100%);
   border-radius: 50%;
   z-index: var(--z-0);
-  animation: float 22s ease-in-out infinite reverse;
+  animation: floatDynamic 22s ease-in-out infinite reverse, rotate 35s linear infinite reverse;
+  filter: blur(55px);
 }
 
-/* Subtle grid pattern overlay */
+/* Animated gradient mesh overlay */
 .hero-bg-grid {
   position: absolute;
   top: 0;
@@ -566,23 +575,47 @@ header#first::after {
   width: 100%;
   height: 100%;
   background-image:
-    linear-gradient(rgba(37, 99, 235, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37, 99, 235, 0.02) 1px, transparent 1px);
-  background-size: 50px 50px;
+    linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
   z-index: var(--z-0);
-  opacity: 0.4;
+  opacity: 0.5;
+  animation: gridMove 30s linear infinite;
 }
 
-/* Floating animation */
-@keyframes float {
+/* Dynamic floating animation */
+@keyframes floatDynamic {
   0%, 100% {
     transform: translate(0, 0) scale(1);
   }
-  33% {
-    transform: translate(30px, -30px) scale(1.05);
+  25% {
+    transform: translate(50px, -40px) scale(1.1);
   }
-  66% {
-    transform: translate(-20px, 20px) scale(0.95);
+  50% {
+    transform: translate(-30px, 50px) scale(0.9);
+  }
+  75% {
+    transform: translate(40px, 30px) scale(1.05);
+  }
+}
+
+/* Rotation animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Grid movement */
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
   }
 }
 
@@ -747,42 +780,242 @@ section#main p {
   margin-bottom: var(--space-6);
 }
 
-section#main .image-detail {
-  display: block;
-  margin: var(--space-8) 0;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
+/* Content sections with alternating image layouts */
+section#main .content-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  margin: var(--space-16) 0;
+  align-items: center;
 }
 
+@media (min-width: 768px) {
+  section#main .content-section {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+
+  /* Alternate layout: image on right */
+  section#main .content-section:nth-of-type(odd) {
+    direction: ltr;
+  }
+
+  /* Alternate layout: image on left */
+  section#main .content-section:nth-of-type(even) {
+    direction: rtl;
+  }
+
+  section#main .content-section:nth-of-type(even) .content-text {
+    direction: ltr;
+  }
+}
+
+section#main .content-text {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Modern enhanced image frame with organic blob shape */
+section#main .image-detail {
+  display: flex;
+  position: relative;
+  overflow: visible;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  aspect-ratio: 4 / 3;
+  filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.25));
+}
+
+/* Organic blob shape using border-radius percentages */
 section#main .image-detail img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 0;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
-/* Banner Section (#banner) - Flexbox */
+section#main .image-detail:hover {
+  transform: translateY(-8px);
+  filter: drop-shadow(0 30px 80px rgba(0, 0, 0, 0.35));
+}
+
+/* Decorative gradient blob shape behind image */
+section#main .image-detail::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.3) 0%,
+    rgba(5, 150, 105, 0.3) 50%,
+    rgba(251, 146, 60, 0.3) 100%
+  );
+  border-radius: 32% 68% 68% 32% / 35% 35% 65% 65%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+  filter: blur(12px);
+}
+
+section#main .image-detail:hover::before {
+  opacity: 1;
+}
+
+/* Alternate organic shapes for even/odd sections */
+section#main .content-section:nth-of-type(even) .image-detail img {
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+section#main .content-section:nth-of-type(even) .image-detail::before {
+  border-radius: 68% 32% 32% 68% / 55% 45% 55% 45%;
+}
+
+section#main .image-detail:hover img {
+  transform: scale(1.05);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Banner Section (#banner) - Glassmorphism with Dynamic Blue Gradient */
 section#banner {
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
-  padding: var(--space-20) var(--space-6);
+  position: relative;
+  background: linear-gradient(135deg,
+    #06b6d4 0%,     /* Cyan */
+    #0891b2 15%,    /* Teal */
+    #3b82f6 35%,    /* Light blue */
+    #2563eb 50%,    /* Medium blue */
+    #1d4ed8 65%,    /* Primary blue */
+    #1e40af 80%,    /* Dark blue */
+    #0c4a6e 100%);  /* Navy blue-teal */
+  background-size: 300% 300%;
+  animation: gradientShift 16s ease infinite;
+  padding: var(--space-24) var(--space-6);
   text-align: center;
-  color: var(--color-white);
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animated gradient background - dynamic movement */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Floating orbs - Cyan/Light Blue */
+section#banner::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle,
+    rgba(6, 182, 212, 0.4) 0%,
+    rgba(59, 130, 246, 0.25) 30%,
+    rgba(147, 197, 253, 0.15) 60%,
+    transparent 80%);
+  border-radius: 50%;
+  animation: floatDynamic 25s ease-in-out infinite;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+/* Floating orbs - Dark Blue/Navy */
+section#banner::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: 5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle,
+    rgba(30, 64, 175, 0.4) 0%,
+    rgba(29, 78, 216, 0.25) 30%,
+    rgba(59, 130, 246, 0.15) 60%,
+    transparent 80%);
+  border-radius: 50%;
+  animation: floatDynamic 20s ease-in-out infinite reverse;
+  filter: blur(70px);
+  z-index: 0;
+}
+
+/* Glassmorphism Card */
+section#banner .banner-content {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: var(--radius-3xl);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: var(--space-16) var(--space-8);
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+@keyframes cardFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Medical cross icon above card - clean design */
+section#banner .banner-content::before {
+  content: '⚕';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 40px rgba(37, 99, 235, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  color: var(--color-primary);
 }
 
 section#banner h1.title {
   font-size: var(--text-5xl);
   color: var(--color-white);
   margin-bottom: var(--space-6);
+  margin-top: var(--space-8);
+  font-weight: var(--font-weight-extrabold);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: var(--letter-spacing-tight);
 }
 
 section#banner p {
   font-size: var(--text-xl);
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-8);
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
   color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 section#banner .actions {
@@ -796,23 +1029,37 @@ section#banner .actions {
 }
 
 section#banner .button.big.special {
-  background-color: var(--color-white);
-  color: var(--color-secondary);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-primary);
   padding: var(--space-5) var(--space-10);
   font-size: var(--text-lg);
   font-weight: var(--font-weight-bold);
   text-decoration: none;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-full);
   transition: all var(--transition-base);
-  box-shadow: var(--shadow-lg);
-  display: inline-block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+section#banner .button.big.special::after {
+  content: '→';
+  transition: transform var(--transition-base);
+  font-size: var(--text-2xl);
 }
 
 section#banner .button.big.special:hover {
-  background-color: var(--color-accent);
-  color: var(--color-white);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-xl);
+  background: var(--color-white);
+  color: var(--color-primary-dark);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
+  border-color: var(--color-white);
+}
+
+section#banner .button.big.special:hover::after {
+  transform: translateX(6px);
 }
 
 /* Activities Section (#one) - CSS Grid */
