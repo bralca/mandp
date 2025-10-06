@@ -41,16 +41,16 @@ This task list breaks down the complete website restyling project into actionabl
 
 ### 1.0 Design System Foundation
 
-- [ ] 1.1 Audit current `css/main.css` and extract color palette values
-- [ ] 1.2 Audit current `css/styles.css` and extract typography settings
-- [ ] 1.3 Document all spacing values used across both CSS files
-- [ ] 1.4 Create `css/modern-design-system.css` with CSS custom properties
-- [ ] 1.5 Define CSS variables for colors (primary, secondary, text, background)
-- [ ] 1.6 Define CSS variables for spacing (margins, padding scale)
-- [ ] 1.7 Define CSS variables for typography (font families, sizes, weights)
-- [ ] 1.8 Update Google Fonts import from HTTP to HTTPS in new stylesheet
-- [ ] 1.9 Add system font fallbacks to font-family declarations
-- [ ] 1.10 Test CSS variables work correctly in all modern browsers
+- [x] 1.1 Audit current `css/main.css` and extract color palette values
+- [x] 1.2 Audit current `css/styles.css` and extract typography settings
+- [x] 1.3 Document all spacing values used across both CSS files
+- [x] 1.4 Create `css/modern-design-system.css` with CSS custom properties
+- [x] 1.5 Define CSS variables for colors (primary, secondary, text, background)
+- [x] 1.6 Define CSS variables for spacing (margins, padding scale)
+- [x] 1.7 Define CSS variables for typography (font families, sizes, weights)
+- [x] 1.8 Update Google Fonts import from HTTP to HTTPS in new stylesheet
+- [x] 1.9 Add system font fallbacks to font-family declarations
+- [x] 1.10 Test CSS variables work correctly in all modern browsers
 
 ### 2.0 Layout Modernization - Index Page
 

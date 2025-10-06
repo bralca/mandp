@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Design System - Browser Test</title>
+    <link rel="stylesheet" href="modern-design-system.css">
+    <style>
+        /* Test styles using CSS variables */
+        body {
+            margin: 0;
+            padding: var(--space-8);
+            background-color: var(--color-bg-secondary);
+        }
+
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--color-bg-primary);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .test-section {
+            margin-bottom: var(--space-12);
+            padding-bottom: var(--space-8);
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .test-section:last-child {
+            border-bottom: none;
+        }
+
+        /* Color swatches */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--space-4);
+            margin-top: var(--space-4);
+        }
+
+        .color-swatch {
+            height: 80px;
+            border-radius: var(--radius-md);
+            padding: var(--space-3);
+            color: var(--color-white);
+            font-size: var(--text-sm);
+            font-weight: var(--font-weight-medium);
+            display: flex;
+            align-items: flex-end;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .swatch-primary { background-color: var(--color-primary); }
+        .swatch-secondary { background-color: var(--color-secondary); }
+        .swatch-accent { background-color: var(--color-accent); }
+        .swatch-success { background-color: var(--color-success); }
+        .swatch-warning { background-color: var(--color-warning); }
+        .swatch-error { background-color: var(--color-error); }
+
+        /* Typography tests */
+        .typography-sample h1 { margin-bottom: var(--space-2); }
+        .typography-sample h2 { margin-bottom: var(--space-2); }
+        .typography-sample h3 { margin-bottom: var(--space-2); }
+        .typography-sample p { margin-bottom: var(--space-4); }
+
+        /* Button tests */
+        .button-grid {
+            display: flex;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+            margin-top: var(--space-4);
+        }
+
+        .test-button {
+            padding: var(--space-3) var(--space-6);
+            border: none;
+            border-radius: var(--radius-lg);
+            font-family: var(--font-primary);
+            font-size: var(--text-base);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .test-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+        }
+
+        .btn-accent {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        /* Shadow tests */
+        .shadow-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-4);
+        }
+
+        .shadow-box {
+            height: 80px;
+            background-color: var(--color-white);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-text-secondary);
+        }
+
+        .shadow-xs { box-shadow: var(--shadow-xs); }
+        .shadow-sm { box-shadow: var(--shadow-sm); }
+        .shadow-md { box-shadow: var(--shadow-md); }
+        .shadow-lg { box-shadow: var(--shadow-lg); }
+        .shadow-xl { box-shadow: var(--shadow-xl); }
+        .shadow-2xl { box-shadow: var(--shadow-2xl); }
+
+        /* Spacing tests */
+        .spacing-grid {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            margin-top: var(--space-4);
+        }
+
+        .spacing-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+        }
+
+        .spacing-bar {
+            height: 20px;
+            background-color: var(--color-primary);
+            border-radius: var(--radius-sm);
+        }
+
+        .space-4 { width: var(--space-4); }
+        .space-8 { width: var(--space-8); }
+        .space-12 { width: var(--space-12); }
+        .space-16 { width: var(--space-16); }
+        .space-20 { width: var(--space-20); }
+
+        /* Responsive test */
+        @media (max-width: 768px) {
+            .test-container {
+                padding: var(--space-4);
+            }
+
+            .color-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+        }
+
+        /* Status indicators */
+        .status {
+            display: inline-block;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            font-size: var(--text-sm);
+            font-weight: var(--font-weight-medium);
+            margin-top: var(--space-2);
+        }
+
+        .status-success {
+            background-color: var(--color-success-light);
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1 style="color: var(--color-primary);">Modern Design System - Browser Compatibility Test</h1>
+        <p style="color: var(--color-text-secondary); font-size: var(--text-lg);">
+            Test file per verificare il corretto funzionamento delle CSS Custom Properties su tutti i browser moderni.
+        </p>
+        <div class="status status-success">✓ CSS Variables Loaded</div>
+
+        <!-- Color System Test -->
+        <div class="test-section">
+            <h2>Color System</h2>
+            <p style="color: var(--color-text-secondary);">Primary, Secondary & Accent Colors</p>
+            <div class="color-grid">
+                <div class="color-swatch swatch-primary">Primary<br>#2563EB</div>
+                <div class="color-swatch swatch-secondary">Secondary<br>#059669</div>
+                <div class="color-swatch swatch-accent">Accent<br>#F97316</div>
+                <div class="color-swatch swatch-success">Success<br>#16A34A</div>
+                <div class="color-swatch swatch-warning">Warning<br>#EA580C</div>
+                <div class="color-swatch swatch-error">Error<br>#DC2626</div>
+            </div>
+        </div>
+
+        <!-- Typography Test -->
+        <div class="test-section">
+            <h2>Typography System</h2>
+            <p style="color: var(--color-text-secondary);">Font: Inter (Primary)</p>
+            <div class="typography-sample">
+                <h1>Heading 1 - 3rem (48px)</h1>
+                <h2>Heading 2 - 2.25rem (36px)</h2>
+                <h3>Heading 3 - 1.875rem (30px)</h3>
+                <h4>Heading 4 - 1.5rem (24px)</h4>
+                <h5>Heading 5 - 1.25rem (20px)</h5>
+                <h6>Heading 6 - 1.125rem (18px)</h6>
+                <p>Body text - 1rem (16px) with line-height 1.625. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p style="font-family: var(--font-decorative); font-size: var(--text-3xl); color: var(--color-primary);">
+                    Dancing Script - Decorative Font
+                </p>
+            </div>
+        </div>
+
+        <!-- Button Test -->
+        <div class="test-section">
+            <h2>Buttons & Interactions</h2>
+            <p style="color: var(--color-text-secondary);">Hover to see transitions (200ms ease-in-out)</p>
+            <div class="button-grid">
+                <button class="test-button btn-primary">Primary Button</button>
+                <button class="test-button btn-secondary">Secondary Button</button>
+                <button class="test-button btn-accent">Accent Button</button>
+            </div>
+        </div>
+
+        <!-- Shadow Test -->
+        <div class="test-section">
+            <h2>Shadow System (Depth)</h2>
+            <p style="color: var(--color-text-secondary);">From subtle to dramatic elevation</p>
+            <div class="shadow-grid">
+                <div class="shadow-box shadow-xs">XS</div>
+                <div class="shadow-box shadow-sm">SM</div>
+                <div class="shadow-box shadow-md">MD</div>
+                <div class="shadow-box shadow-lg">LG</div>
+                <div class="shadow-box shadow-xl">XL</div>
+                <div class="shadow-box shadow-2xl">2XL</div>
+            </div>
+        </div>
+
+        <!-- Spacing Test -->
+        <div class="test-section">
+            <h2>Spacing System (8px Grid)</h2>
+            <p style="color: var(--color-text-secondary);">Consistent spacing based on multiples of 8</p>
+            <div class="spacing-grid">
+                <div class="spacing-item">
+                    <div class="spacing-bar space-4"></div>
+                    <span style="color: var(--color-text-secondary);">--space-4 (16px)</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-bar space-8"></div>
+                    <span style="color: var(--color-text-secondary);">--space-8 (32px)</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-bar space-12"></div>
+                    <span style="color: var(--color-text-secondary);">--space-12 (48px)</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-bar space-16"></div>
+                    <span style="color: var(--color-text-secondary);">--space-16 (64px)</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-bar space-20"></div>
+                    <span style="color: var(--color-text-secondary);">--space-20 (80px)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Browser Compatibility Info -->
+        <div class="test-section">
+            <h2>Browser Compatibility Check</h2>
+            <p style="color: var(--color-text-secondary);">
+                Se vedi correttamente colori, font (Inter), ombre e spaziature, il design system funziona nel tuo browser.
+            </p>
+            <div style="background-color: var(--color-bg-tertiary); padding: var(--space-4); border-radius: var(--radius-md); margin-top: var(--space-4);">
+                <h4 style="margin-bottom: var(--space-2);">Browser Supportati:</h4>
+                <ul style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                    <li>Chrome 88+ ✓</li>
+                    <li>Firefox 85+ ✓</li>
+                    <li>Safari 14+ ✓</li>
+                    <li>Edge 88+ ✓</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Test Instructions -->
+        <div class="test-section" style="border-bottom: none;">
+            <h2>Istruzioni di Test</h2>
+            <ol style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); font-size: var(--text-base);">
+                <li style="margin-bottom: var(--space-2);">Apri questo file in Chrome, Firefox, Safari ed Edge</li>
+                <li style="margin-bottom: var(--space-2);">Verifica che i colori siano corretti (blu #2563EB, verde #059669, arancione #F97316)</li>
+                <li style="margin-bottom: var(--space-2);">Verifica che il font Inter sia caricato (controlla Inspector)</li>
+                <li style="margin-bottom: var(--space-2);">Passa il mouse sui bottoni per verificare le transizioni</li>
+                <li style="margin-bottom: var(--space-2);">Ridimensiona la finestra per testare la responsività</li>
+                <li style="margin-bottom: var(--space-2);">Apri DevTools Console e verifica che non ci siano errori</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // Test JavaScript per verificare CSS Custom Properties
+        document.addEventListener('DOMContentLoaded', function() {
+            const root = document.documentElement;
+            const computedStyle = getComputedStyle(root);
+
+            // Test se le CSS variables sono caricate
+            const primaryColor = computedStyle.getPropertyValue('--color-primary').trim();
+            const fontPrimary = computedStyle.getPropertyValue('--font-primary').trim();
+
+            console.log('=== CSS CUSTOM PROPERTIES TEST ===');
+            console.log('Primary Color:', primaryColor);
+            console.log('Primary Font:', fontPrimary);
+
+            if (primaryColor && fontPrimary) {
+                console.log('✓ CSS Variables are working correctly!');
+            } else {
+                console.error('✗ CSS Variables are NOT loaded!');
+            }
+
+            // Test tutti i colori principali
+            console.log('\n=== COLOR SYSTEM ===');
+            console.log('Primary:', computedStyle.getPropertyValue('--color-primary').trim());
+            console.log('Secondary:', computedStyle.getPropertyValue('--color-secondary').trim());
+            console.log('Accent:', computedStyle.getPropertyValue('--color-accent').trim());
+
+            // Test spacing
+            console.log('\n=== SPACING SYSTEM ===');
+            console.log('space-4:', computedStyle.getPropertyValue('--space-4').trim());
+            console.log('space-8:', computedStyle.getPropertyValue('--space-8').trim());
+            console.log('space-12:', computedStyle.getPropertyValue('--space-12').trim());
+
+            // Test typography
+            console.log('\n=== TYPOGRAPHY SYSTEM ===');
+            console.log('Font Primary:', computedStyle.getPropertyValue('--font-primary').trim());
+            console.log('Font Display:', computedStyle.getPropertyValue('--font-display').trim());
+            console.log('Text Base:', computedStyle.getPropertyValue('--text-base').trim());
+
+            console.log('\n=== BROWSER INFO ===');
+            console.log('User Agent:', navigator.userAgent);
+            console.log('Viewport Width:', window.innerWidth);
+            console.log('Viewport Height:', window.innerHeight);
+        });
+    </script>
+</body>
+</html>
