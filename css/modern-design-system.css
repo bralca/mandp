@@ -883,6 +883,13 @@ section#main .image-detail:hover img {
     inset 0 0 0 1px rgba(255, 255, 255, 0.3);
 }
 
+/* Hide images on mobile */
+@media (max-width: 767px) {
+  section#main .image-detail {
+    display: none !important;
+  }
+}
+
 /* Banner Section (#banner) - Glassmorphism with Dynamic Blue Gradient */
 section#banner {
   position: relative;
@@ -1080,30 +1087,71 @@ section#one h1.title {
   text-align: center;
 }
 
-section#one .content {
+/* Activity Cards - Expandable */
+section#one .activity-card {
   background-color: var(--color-bg-primary);
   padding: var(--space-8);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-md);
   margin-bottom: var(--space-8);
-  transition: all var(--transition-base);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
 }
 
-section#one .content:hover {
+section#one .activity-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(37, 99, 235, 0.1);
 }
 
-section#one .content h4 {
+section#one .activity-card.expanded {
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1),
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+section#one .activity-card h4 {
   font-size: var(--text-2xl);
+  color: var(--color-primary);
   margin-bottom: var(--space-4);
+  font-weight: var(--font-weight-bold);
 }
 
-section#one .content p {
+section#one .activity-summary {
   font-size: var(--text-lg);
   line-height: var(--line-height-relaxed);
   color: var(--color-text-secondary);
   margin-bottom: var(--space-6);
+}
+
+section#one .activity-full-content {
+  border-top: 2px solid var(--color-border-light);
+  padding-top: var(--space-6);
+  margin-top: var(--space-4);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+section#one .activity-full-content p {
+  font-size: var(--text-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+section#one .activity-full-content p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 section#one .actions {
@@ -1124,7 +1172,10 @@ section#one .button.alt {
   text-decoration: none;
   border-radius: var(--radius-lg);
   transition: all var(--transition-base);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
 }
 
 section#one .button.alt:hover {
@@ -1132,6 +1183,17 @@ section#one .button.alt:hover {
   color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+/* Toggle button icon animation */
+section#one .toggle-activity .toggle-icon {
+  transition: transform var(--transition-base);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+section#one .activity-card.expanded .toggle-activity .toggle-icon {
+  transform: rotate(180deg);
 }
 
 /* Footer - Flexbox */
