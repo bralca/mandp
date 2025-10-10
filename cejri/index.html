@@ -1,451 +1,805 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Centro Jonico Riabilitativo - Ce.J.Ri - Bianco RC. I nostri servizi vengono erogati in modalità ambulatoriale, domiciliare e semiresidenziale. Centro Cejri è accreditato dal Servizio Sanitario Nazionale, convenzionato dall'ASP 5 di Reggio Calabria il quale, attraverso un'attenta selezione valuta le domande di ammissione. Contattaci per saperne di più!" />
     <meta name="author" content="">
     <title>Centro Jonico Riabilitativo | Bianco (RC)</title>
-	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Modern CSS -->
+    <link href="css/cejri-modern.css" rel="stylesheet">
+
+    <!-- Owl Carousel CSS (keeping for carousel functionality) -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.transitions.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
+
+    <!-- Font Awesome for icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-89376496-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-  ga('create', 'UA-89376496-1', 'auto');
-  ga('send', 'pageview');
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Centro Jonico Riabilitativo - Ce.J.Ri - Bianco RC">
+    <meta itemprop="description" content="I nostri servizi vengono erogati in modalità ambulatoriale, domiciliare e semiresidenziale. Centro Cejri è accreditato dal Servizio Sanitario Nazionale, convenzionato dall'ASP 5 di Reggio Calabria il quale, attraverso un'attenta selezione valuta le domande di ammissione. Contattaci per saperne di più!">
+    <meta itemprop="image" content="http://www.medicalandpsychology.com/images/fb-image-cejri.png">
 
-</script>
-
-<!-- Schema.org markup for Google+ -->
-		<meta itemprop="name" content="Centro Jonico Riabilitativo - Ce.J.Ri - Bianco RC">
-		<meta itemprop="description" content="I nostri servizi vengono erogati in modalità ambulatoriale, domiciliare e semiresidenziale. Centro Cejri è accreditato dal Servizio Sanitario Nazionale, convenzionato dall'ASP 5 di Reggio Calabria il quale, attraverso un'attenta selezione valuta le domande di ammissione. Contattaci per saperne di più!">
-		<meta itemprop="image" content="http://www.medicalandpsychology.com/images/fb-image-cejri.png">
-		
-<!-- Open Graph data -->
-		<meta property="og:title" content="Centro Jonico Riabilitativo - Ce.J.Ri - Bianco RC" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="http://www.medicalandpsychology.com/cejri/index.html" />
-		<meta property="og:image" content="http://www.medicalandpsychology.com/images/fb-image-cejri.png" />
-		<meta property="og:description" content="I nostri servizi vengono erogati in modalità ambulatoriale, domiciliare e semiresidenziale. Centro Cejri è accreditato dal Servizio Sanitario Nazionale, convenzionato dall'ASP 5 di Reggio Calabria il quale, attraverso un'attenta selezione valuta le domande di ammissione. Contattaci per saperne di più!" /> 
-</head><!--/head-->
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Centro Jonico Riabilitativo - Ce.J.Ri - Bianco RC" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.medicalandpsychology.com/cejri/index.html" />
+    <meta property="og:image" content="http://www.medicalandpsychology.com/images/fb-image-cejri.png" />
+    <meta property="og:description" content="I nostri servizi vengono erogati in modalità ambulatoriale, domiciliare e semiresidenziale. Centro Cejri è accreditato dal Servizio Sanitario Nazionale, convenzionato dall'ASP 5 di Reggio Calabria il quale, attraverso un'attenta selezione valuta le domande di ammissione. Contattaci per saperne di più!" />
+</head>
 
 <body id="home" class="homepage">
+    <!-- Modern Top Bar -->
+    <div class="top-bar" id="topBar">
+        <div class="top-bar-content">
+            <h1><i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>CORSO BOBATH BASE - Secondo le norme I.B.I.T.A.</h1>
+            <div class="top-bar-actions">
+                <button class="top-bar-button" onclick="window.open('https://www.medicalandpsychology.com/cejri/corso-bobath.html', '_blank');">Scopri il Corso <i class="fa fa-arrow-right" style="margin-left: 4px; font-size: 0.75rem;"></i></button>
+                <button class="top-bar-close" onclick="closeTopBar()" aria-label="Chiudi banner">×</button>
+            </div>
+        </div>
+    </div>
 
-
+    <!-- Modern Header -->
     <header id="header">
-        <!-- Sticky Top Bar -->
-        <div class="top-bar">
-            <h1>CORSO BOBATH BASE - Secondo le norme I.B.I.T.A.</h1>
-            <button onclick="window.open('https://www.medicalandpsychology.com/cejri/corso-bobath.html', '_blank');">Scopri il Corso</button>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="navbar-brand" href="http://www.medicalandPsychology.com/cejri/index.html">
+                    <img src="images/logo.png" alt="Centro Jonico Riabilitativo Ce.J.Ri">
+                </a>
+
+                <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="navbar-menu" id="navMenu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#services" class="nav-link">Servizi</a>
+                    <a href="#meet-team" class="nav-link">Chi Siamo</a>
+                    <a href="#contact" class="nav-link">Orari</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank" class="nav-button">Contattaci</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modern Hero Split-Screen Carousel -->
+    <section id="main-slider" class="hero-modern">
+        <div class="hero-slides-wrapper">
+            <!-- Slide 1 -->
+            <div class="hero-slide active" data-slide="1">
+                <div class="hero-content-side">
+                    <div class="hero-content-inner">
+                        <div class="hero-badge">Centro Riabilitativo</div>
+                        <h1 class="hero-title">
+                            <span class="highlight">Ce.J.Ri</span> è il primo centro riabilitativo della Locride
+                        </h1>
+                        <p class="hero-description">Un punto di riferimento per la riabilitazione neuropsicomotoria, logopedica e cognitiva nel territorio della Locride</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="hero-btn-primary">Scopri i servizi</a>
+                            <a href="#contact" class="hero-btn-secondary">Contattaci</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Anni di esperienza</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">120+</span>
+                                <span class="stat-label">Pazienti all'anno</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Professionisti</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-side">
+                    <img src="images/slider/bg1.png" alt="Centro Ce.J.Ri" class="hero-main-image">
+                    <div class="floating-badge badge-1">
+                        <i class="fa fa-user-md"></i>
+                        <span>Riabilitazione</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa fa-heart"></i>
+                        <span>Cura Personalizzata</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fa fa-certificate"></i>
+                        <span>Accreditato SSN</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide" data-slide="2">
+                <div class="hero-content-side">
+                    <div class="hero-content-inner">
+                        <div class="hero-badge">Dal 2008</div>
+                        <h1 class="hero-title">
+                            <span class="highlight">Ce.J.Ri</span> accreditato con il Servizio Sanitario Nazionale
+                        </h1>
+                        <p class="hero-description">Un riconoscimento istituzionale che garantisce la qualità e la professionalità dei nostri servizi</p>
+                        <div class="hero-buttons">
+                            <a href="#meet-team" class="hero-btn-primary">Scopri la storia</a>
+                            <a href="#contact" class="hero-btn-secondary">Contattaci</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2008</span>
+                                <span class="stat-label">Accreditamento</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Convenzionato</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">SSN</span>
+                                <span class="stat-label">Accreditato</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-side">
+                    <img src="images/slider/bg2.png" alt="Accreditamento SSN" class="hero-main-image">
+                    <div class="floating-badge badge-1">
+                        <i class="fa fa-check-circle"></i>
+                        <span>Qualità Certificata</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa fa-users"></i>
+                        <span>Team Specializzato</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fa fa-shield"></i>
+                        <span>Sicurezza</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide" data-slide="3">
+                <div class="hero-content-side">
+                    <div class="hero-content-inner">
+                        <div class="hero-badge">Capacità</div>
+                        <h1 class="hero-title">
+                            56 pazienti giornalieri
+                        </h1>
+                        <p class="hero-description">Servizi ambulatoriali, semiresidenziali e domiciliari convenzionati per garantire la massima accessibilità</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="hero-btn-primary">Scopri come raggiungerci</a>
+                            <a href="#services" class="hero-btn-secondary">I nostri servizi</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">56</span>
+                                <span class="stat-label">Pazienti/giorno</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Modalità di servizio</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Giorni settimana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-side">
+                    <img src="images/slider/bg3.png" alt="Servizi Ce.J.Ri" class="hero-main-image">
+                    <div class="floating-badge badge-1">
+                        <i class="fa fa-hospital-o"></i>
+                        <span>Ambulatoriale</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa fa-home"></i>
+                        <span>Domiciliare</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fa fa-building"></i>
+                        <span>Semiresidenziale</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide" data-slide="4">
+                <div class="hero-content-side">
+                    <div class="hero-content-inner">
+                        <div class="hero-badge">Il Nostro Team</div>
+                        <h1 class="hero-title">
+                            30 professionisti altamente specializzati
+                        </h1>
+                        <p class="hero-description">Logopedia, Neuropsicomotricità, Fisioterapia, Psicologia, Terapia occupazionale, Educatori professionali, Infermieri, Assistenti sociali, Pedagogisti e Operatori socio sanitari</p>
+                        <div class="hero-buttons">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank" class="hero-btn-primary">Ricevi maggiori informazioni</a>
+                            <a href="#meet-team" class="hero-btn-secondary">Chi siamo</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Specializzazioni</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Modalità</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Personalizzato</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-side">
+                    <img src="images/slider/bg4.png" alt="Team Ce.J.Ri" class="hero-main-image">
+                    <div class="floating-badge badge-1">
+                        <i class="fa fa-graduation-cap"></i>
+                        <span>Alta Formazione</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa fa-stethoscope"></i>
+                        <span>Competenza</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fa fa-handshake-o"></i>
+                        <span>Dedizione</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top new-navbar" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="http://www.medicalandPsychology.com/cejri/index.html"><img src="images/logo.png" alt="logo"></a>
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">Home</a></li>
-                        <li class="scroll"><a href="#services">Servizi</a></li>
-                        <li class="scroll"><a href="#meet-team">Chi Siamo</a></li>
-                        <li class="scroll"><a href="#contact">Orari</a></li>
-                        <li class="scroll"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank"><button class="btn" style="background-color: #2a95be; color:white"; position:relative";>Contattaci</button></a></li>                        
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
 
-   <section id="main-slider">
-        <div class="owl-carousel">
-             <div class="item" style="background-image: url(images/slider/bg1.jpg);">
-                 <div class="slider-inner">
-                     <div class="container">
-                         <div class="row">
-                             <div class="col-sm-6">
-                                 <div class="carousel-content">
-                                     <h2><span>Ce.J.Ri</span> è il primo centro riabilitativo della Locride</h2>
-                                     <a class="btn btn-primary btn-lg" href="https://www.medicalandpsychology.com/cejri/index.html#services">Scopri i servizi</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div><!--/.item-->
-             <div class="item" style="background-image: url(images/slider/bg2.jpg);">
-                 <div class="slider-inner">
-                     <div class="container">
-                         <div class="row">
-                             <div class="col-sm-6">
-                                 <div class="carousel-content">
-                                     <h2><span>Ce.J.Ri</span> dal 2008 è accreditato con il Servizio Sanitario Nazionale</h2>
-                                     <a class="btn btn-primary btn-lg" href="https://www.medicalandpsychology.com/cejri/index.html#meet-team">Scopri la storia</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div><!--/.item-->
-              <div class="item" style="background-image: url(images/slider/bg3.jpg);">
-                 <div class="slider-inner">
-                     <div class="container">
-                         <div class="row">
-                             <div class="col-sm-6">
-                                 <div class="carousel-content">
-                                     <h2>56 pazienti giornalieri tra servizi ambulatoriali, semiresidenziali e domiciliari convenzionati</h2>
-                                     <a class="btn btn-primary btn-lg" href="https://www.medicalandpsychology.com/cejri/index.html#contact">Scopri come raggiungerci</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div><!--/.item-->
-             <div class="item" style="background-image: url(images/slider/bg4.jpg);">
-                 <div class="slider-inner">
-                     <div class="container">
-                         <div class="row">
-                             <div class="col-sm-6">
-                                 <div class="carousel-content">
-                                     <h2>30 professionisti altamente specializzati</h2>
-                                     <p>In logopedia, Neuropsicomotricità, Fisioterapia, Psicologia, Terapia occupazionale, Educatori professionali, Infermieri, Assistenti sociali, Pedagogisti e Operatori socio sanitari</p>
-                                     <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank">Ricevi maggiori informazioni</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div><!--/.item-->
-         </div><!--/.owl-carousel-->
-     </section><!--/#main-slider-->
+        <!-- Navigation Dots -->
+        <div class="hero-dots">
+            <span class="hero-dot active" data-slide="1"></span>
+            <span class="hero-dot" data-slide="2"></span>
+            <span class="hero-dot" data-slide="3"></span>
+            <span class="hero-dot" data-slide="4"></span>
+        </div>
 
-   <!-- <section id="features">
-        <div class="container">
+        <!-- Navigation Arrows -->
+        <button class="hero-arrow hero-arrow-prev" aria-label="Previous slide">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <button class="hero-arrow hero-arrow-next" aria-label="Next slide">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <!-- La Nostra Utenza Section with Beautiful Icons -->
+    <section id="services">
+        <div class="section-container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Awesome Features</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title">La nostra utenza</h2>
+                <p class="section-description">E' composta da pazienti di tutte le età con patologie neuropsichiatriche e disabilità transitorie o permanenti<br>nell'area motoria, fisica, cognitiva, sensoriale e neuropsicologica</p>
             </div>
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeft">
-                    <img class="img-responsive" src="images/main-feature.png" alt="">
+
+            <div class="utenza-grid">
+                <div class="utenza-card">
+                    <div class="utenza-illustration">
+                        <img src="../images/eta-evolutiva.svg" alt="Età evolutiva">
+                    </div>
+                    <div class="utenza-info">
+                        <h3>Età evolutiva</h3>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-angle-right"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">UX design</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                        </div>
-                    </div>
 
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-cubes"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">UI design</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                        </div>
+                <div class="utenza-card">
+                    <div class="utenza-illustration">
+                        <img src="../images/adulti.svg" alt="Adulti">
                     </div>
-
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-pie-chart"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">SEO Services</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                        </div>
+                    <div class="utenza-info">
+                        <h3>Adulti</h3>
                     </div>
+                </div>
 
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-pie-chart"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">SEO Services</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                        </div>
+                <div class="utenza-card">
+                    <div class="utenza-illustration">
+                        <img src="../images/anziani.svg" alt="Anziani">
+                    </div>
+                    <div class="utenza-info">
+                        <h3>Anziani</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
-    <section id="services" >
-        <div class="container">
+    </section>
 
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">La nostra utenza</h2>
-                <p class="text-center wow fadeInDown">E' composta da pazienti di tutte le età con patologie neuropsichiatriche e disabilità transitorie o permanenti<br>nell'area motoria, fisica, cognitiva, sensoriale e neuropsicologica</p>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/01.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Eta' evolutiva</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/02.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Adulti</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/03.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Anziani</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div><!--/.container-->
-    </section><!--/#services-->
-
+    <!-- Come Accedere ai Servizi - Modern Timeline -->
     <section id="work-process">
-        <div class="container">
+        <div class="section-container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Come accedere ai servizi</h2>
-                <p class="text-center wow fadeInDown">I nostri servizi vengono erogati in modalità ambulatoriale, domiciliare e semiresidenziale. Centro Cejri è accreditato dal Servizio Sanitario Nazionale, convenzionato dall'ASP 5 di Reggio Calabria il quale, attraverso un'attenta selezione valuta le domande di ammissione. <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank"><strong>Contattaci per saperne di più!</strong></a></p>
+                <h2 class="section-title">Come accedere ai servizi</h2>
+                <p class="section-description">I nostri servizi vengono erogati in modalità ambulatoriale, domiciliare e semiresidenziale. Centro Cejri è accreditato dal Servizio Sanitario Nazionale, convenzionato dall'ASP 5 di Reggio Calabria il quale, attraverso un'attenta selezione valuta le domande di ammissione. <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank" class="inline-link"><strong>Contattaci per saperne di più!</strong></a></p>
             </div>
 
-            <div class="row text-center">
-                <div class="col-md-2 col-md-4 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="icon-circle">
-                            <span>1</span>
-                            <i class="fa fa-user-md fa-2x"></i>
-                        </div>
-                        <h3>Valutazione bisogni riabilitativi da parte dell'unità di valutazione dell'ASP</h3>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fa fa-user-md"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Valutazione bisogni riabilitativi</h3>
+                        <p>Valutazione da parte dell'unità di valutazione dell'ASP</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-4 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="icon-circle">
-                            <span>2</span>
-                            <i class="fa fa-users fa-2x"></i>
-                        </div>
-                        <h3>Richiesta di ammissione da presentare al Centro Cejri</h3>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Richiesta di ammissione</h3>
+                        <p>Da presentare al Centro Cejri</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-4 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="icon-circle">
-                            <span>3</span>
-                            <i class="fa fa-file-text-o fa-2x"></i>
-                        </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fa fa-file-text-o"></i>
+                    </div>
+                    <div class="step-content">
                         <h3>Accesso ai servizi</h3>
+                        <p>Valutazione documentazione e accettazione</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-4 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="icon-circle">
-                            <span>4</span>
-                            <i class="fa fa-line-chart fa-2x"></i>
-                        </div>
-                        <h3>Visita specialistica presso il Centro CejRi</h3>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fa fa-line-chart"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Visita specialistica</h3>
+                        <p>Presso il Centro CejRi</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-4 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <div class="icon-circle">
-                            <span>5</span>
-                            <i class="fa fa-calendar fa-2x"></i>
-                        </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <div class="step-content">
                         <h3>Stesura Piano Riabilitativo</h3>
+                        <p>Personalizzato per ogni paziente</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-md-4 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
-                        <div class="icon-circle">
-                            <span>6</span>
-                            <i class="fa fa-thumbs-o-up fa-2x"></i>
-                        </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-icon">
+                        <i class="fa fa-thumbs-o-up"></i>
+                    </div>
+                    <div class="step-content">
                         <h3>Comunicazione data inizio</h3>
+                        <p>Inizio del percorso riabilitativo</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!--/#work-process-->
+    </section>
 
+    <!-- La Nostra Storia - Stats & Timeline Tabs -->
     <section id="meet-team">
-        <div class="container">
+        <div class="section-container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">La nostra storia</h2>
-                <p class="text-center wow fadeInDown">Il Ce.J.Ri nasce all'interno della cooperativa sociale-onlus Istituto di cure <strong>Medical & Psychology</strong>.<br> Il centro è accreditato con il Servizio Sanitario Nazionale e ha ottenuto la certificazione nel<br> sistema di qualità conforme alla norma <strong>UNI EN ISO 9001:2008</strong>.</p>
+                <h2 class="section-title">La nostra storia</h2>
+                <p class="section-description">Il Ce.J.Ri nasce all'interno della cooperativa sociale-onlus Istituto di cure <strong>Medical & Psychology</strong>.<br> Il centro è accreditato con il Servizio Sanitario Nazionale e ha ottenuto la certificazione nel<br> sistema di qualità conforme alla norma <strong>UNI EN ISO 9001:2008</strong>.</p>
             </div>
 
             <div class="divider"></div>
 
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="stats-tabs-grid">
+                <!-- Stats Section -->
+                <div class="stats-column">
                     <h3 class="column-title">Cejri in cifre</h3>
-                    <strong>Prestazioni annuali</strong>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="100">20.000</div>
+
+                    <div class="stat-item">
+                        <strong>Prestazioni annuali</strong>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-width="100">
+                                <span class="progress-value">20.000</span>
+                            </div>
+                        </div>
                     </div>
-                    <strong>Semiresidenziale</strong>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="52">52%</div>
+
+                    <div class="stat-item">
+                        <strong>Semiresidenziale</strong>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-width="52">
+                                <span class="progress-value">52%</span>
+                            </div>
+                        </div>
                     </div>
-                    <strong>Domiciliare</strong>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="24">24%</div>
+
+                    <div class="stat-item">
+                        <strong>Domiciliare</strong>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-width="24">
+                                <span class="progress-value">24%</span>
+                            </div>
+                        </div>
                     </div>
-                    <strong>Ambulatoriale</strong>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="24">24%</div>
+
+                    <div class="stat-item">
+                        <strong>Ambulatoriale</strong>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-width="24">
+                                <span class="progress-value">24%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
+                <!-- Timeline Tabs Section -->
+                <div class="tabs-column">
                     <h3 class="column-title">Tappe Importanti</h3>
-                    <div role="tabpanel">
-                        <ul class="nav main-tab nav-justified" role="tablist">
+                    <div class="tab-panel">
+                        <ul class="main-tab" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">2006</a>
+                                <a href="#tab1" data-tab="tab1">2006</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">2007</a>
+                                <a href="#tab2" data-tab="tab2">2007</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">2008</a>
+                                <a href="#tab3" data-tab="tab3">2008</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab4" role="tab" data-toggle="tab" aria-controls="tab4" aria-expanded="false">2010</a>
+                                <a href="#tab4" data-tab="tab4">2010</a>
                             </li>
                         </ul>
-                        <div id="tab-content" class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
                                 <p>Nasce il Centro Jonico Riabilitativo Ce.J.Ri con una capacità di 30 utenti annui per conto dell'ASP. Gli obiettivi sono quelli di garantire prestazioni specialistiche di tipo Neuro-motoria, Neuro-psicomotoria, Logopedica e Cognitiva in un'area sfornita dai servizi cosiddetti LEA (livelli essenziali di assistenza), attraverso l'implementazione di metodi riabilitativi <a href="https://it.wikipedia.org/wiki/Applied_behavior_analysis" target="_blank"><strong>ABA</strong></a> e <a href="http://www.icdl.com/languages/ricerca-l-autismo" target="_blank"><strong>DIR</strong></a>.</p>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">
+                            <div class="tab-pane" id="tab2">
                                 <p>Istituto di Cure Medical & Psychology acquisisce la titolarità del centro Ce.J.Ri</p>
                                 <p>In un anno le richieste iniziano a crescere fino ad arrivare a 60 utenti annui</p>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">
+                            <div class="tab-pane" id="tab3">
                                 <p>Accreditamento provvisorio al Servizio Sanitario Nazionale</p>
                                 <p>Le richieste arrivano a 70 utenti annui</p>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade" id="tab4" aria-labelledby="tab3">
+                            <div class="tab-pane" id="tab4">
                                 <p>Accreditamento definitivo al Servizio Sanitario Nazionale</p>
                                 <p>Il riconoscimento del servizio svolto sul territorio viene istituzionalizzato. Al 2010 centro Ce.J.Ri gestisce circa 100 richieste/annui. Ad oggi le richieste sono circa 120/annue.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                
-
             </div>
         </div>
-    </section><!--/#meet-team-->
+    </section>
 
-
+    <!-- Contact Section with Map -->
     <section id="contact">
-        <div id="google-map" style="height:650px; width: 100%" data-latitude="38.091956" data-longitude="16.1510294"></div>
-        <div class="container-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-sm-offset-8">
-                        <div class="contact-form">
-                            <h3>Indirizzo e Orari</h3>
+        <!-- Animated Background Accents -->
+        <div class="contact-bg-accent-1"></div>
+        <div class="contact-bg-accent-2"></div>
+        <div class="contact-bg-grid"></div>
 
-                            <address>
-                              <strong>Centro Jonico Riabilitativo</strong><br>
-                              Via della Pace, 1<br>
-                              Bianco, RC 89032<br>
-                              Tel. 0964-992577<br>
-                              <br>
-                              <strong>Orari di apertura servizio ambulatoriale</strong><br>
-                              Lun-Ven<br>
-                              9:30-12:30 / 14:30-18:30<br>
-                              <br>
-                              <strong>Orari di apertura servizio domiciliare</strong><br>
-                              Lun-Ven<br>
-                              9:30-12:30 / 14:30-18:30<br>
-                              <br>
-                              <strong>Orari di apertura servizio semiresidenziale</strong><br>
-                              Lun-Ven<br>
-                              9:30-17:30 
-                            </address>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank"><button class="btn" style="background-color: #2a95be; color:white; width: 100%"; position:relative";>Richiedi informazioni</button></a>
-                        </div>
+        <div class="contact-content">
+            <div class="contact-icon">
+                <i class="fa fa-stethoscope"></i>
+            </div>
+
+            <h2 class="contact-title">Centro Jonico Riabilitativo</h2>
+
+            <div class="contact-info-grid">
+                <div class="contact-info-item">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="contact-info-text">
+                        <strong>Indirizzo</strong>
+                        <p>Via della Pace, 1<br>Bianco, RC 89032</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fa fa-phone"></i>
+                    <div class="contact-info-text">
+                        <strong>Telefono</strong>
+                        <p>0964-992577</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fa fa-clock-o"></i>
+                    <div class="contact-info-text">
+                        <strong>Orari</strong>
+                        <p>Lun - Ven: 08:30 - 17:30<br>Sabato: 08:30 - 14:30</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section><!--/#bottom-->
 
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2_BYNio9rOdA6gJI08xmDfoKImll3U3_1pWSVrmE34KKobQ/viewform" target="_blank" class="contact-cta">Contattaci</a>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
     <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-10">
-                   <span style="text-align:center;" &copy; <span id="current_year"></span> - Istituto di cure Medical & Psychology - Centro Jonico Riabilitativo Ce.J.Ri - P.IVA:01365920808 - PEC: M_AND_P@LEGALMAIL.IT | <a href="https://whistlesblow.it/c/istituto-di-cure-medical-e-psychology/1">Whistleblowing</a>
-                </div>
-                <div class="col-sm-2">
-                    <ul class="social-icons">
-                       <li><a href="https://www.facebook.com/Centro-Jonico-Riabilitativo-Cejri-1595812457337771/"><i class="fa fa-facebook"></i></a></li>
-                    </ul>
-                </div>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; <span id="current_year"></span> - Istituto di cure Medical & Psychology - Centro Jonico Riabilitativo Ce.J.Ri - P.IVA:01365920808 - PEC: M_AND_P@LEGALMAIL.IT | <a href="https://whistlesblow.it/c/istituto-di-cure-medical-e-psychology/1">Whistleblowing</a></p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Centro-Jonico-Riabilitativo-Cejri-1595812457337771/" aria-label="Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
             </div>
         </div>
-    </footer><!--/#footer-->
-    <script>
-        document.getElementById("current_year").textContent = new Date().getFullYear();
-    </script>	
+    </footer>
+
+    <!-- Scripts -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD33i2F1zmpAxbDRV4zkBlgB_PymF4mb3Q&callback=initMap"
-  	type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD33i2F1zmpAxbDRV4zkBlgB_PymF4mb3Q&callback=initMap" async defer></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-<!--     <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='09ffe4a6e4d85615cec9f3493fbeed9aeef75532e17433709eaae4e503464ef1';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script> -->
+
+    <script>
+        // Update current year
+        document.getElementById("current_year").textContent = new Date().getFullYear();
+
+        // Top Bar Close Functionality
+        function closeTopBar() {
+            const topBar = document.getElementById('topBar');
+            topBar.classList.add('banner-hidden');
+            document.body.classList.add('top-bar-closed');
+
+            setTimeout(() => {
+                topBar.style.display = 'none';
+            }, 300);
+
+            sessionStorage.setItem('topBarClosed', 'true');
+        }
+
+        // Check if top bar was closed in this session
+        if (sessionStorage.getItem('topBarClosed') === 'true') {
+            document.getElementById('topBar').style.display = 'none';
+            document.body.classList.add('top-bar-closed');
+        }
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Navigation Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.offsetTop;
+                        const offsetPosition = elementPosition - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        document.getElementById('navMenu').classList.remove('active');
+                        document.getElementById('navToggle').classList.remove('active');
+
+                        // Update active state
+                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        // Initialize Owl Carousel with modern styling
+        jQuery(document).ready(function($) {
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText: [
+                    '<i class="fa fa-angle-left"></i>',
+                    '<i class="fa fa-angle-right"></i>'
+                ],
+                dots: true,
+                animateOut: 'fadeOut',
+                smartSpeed: 1000
+            });
+
+            // Animate progress bars when in viewport
+            function animateProgressBars() {
+                $('.progress-bar').each(function() {
+                    const bar = $(this);
+                    const width = bar.attr('data-width');
+                    const rect = this.getBoundingClientRect();
+                    const inViewport = rect.top < window.innerHeight && rect.bottom >= 0;
+
+                    if (inViewport && !bar.hasClass('animated')) {
+                        bar.css('width', width + '%');
+                        bar.addClass('animated');
+                    }
+                });
+            }
+
+            // Initial check
+            animateProgressBars();
+
+            // Check on scroll
+            $(window).on('scroll', animateProgressBars);
+
+            // Tab functionality
+            $('.main-tab a').on('click', function(e) {
+                e.preventDefault();
+                const targetTab = $(this).attr('data-tab');
+
+                // Remove active class from all tabs and panes
+                $('.main-tab li').removeClass('active');
+                $('.tab-pane').removeClass('active');
+
+                // Add active class to clicked tab and corresponding pane
+                $(this).parent().addClass('active');
+                $('#' + targetTab).addClass('active');
+            });
+        });
+
+        // Hero Carousel Functionality
+        (function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            const dots = document.querySelectorAll('.hero-dot');
+            const prevBtn = document.querySelector('.hero-arrow-prev');
+            const nextBtn = document.querySelector('.hero-arrow-next');
+            let currentSlide = 0;
+            let autoplayInterval;
+            const AUTOPLAY_DELAY = 5000; // 5 seconds
+
+            function showSlide(index) {
+                // Remove active class from all slides and dots
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                dots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+
+                // Wrap around if needed
+                if (index >= slides.length) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = slides.length - 1;
+                } else {
+                    currentSlide = index;
+                }
+
+                // Add active class to current slide and dot
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+
+            function startAutoplay() {
+                stopAutoplay(); // Clear any existing interval
+                autoplayInterval = setInterval(nextSlide, AUTOPLAY_DELAY);
+            }
+
+            function stopAutoplay() {
+                if (autoplayInterval) {
+                    clearInterval(autoplayInterval);
+                }
+            }
+
+            // Event listeners for navigation arrows
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    startAutoplay(); // Restart autoplay after manual interaction
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    startAutoplay(); // Restart autoplay after manual interaction
+                });
+            }
+
+            // Event listeners for dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                    startAutoplay(); // Restart autoplay after manual interaction
+                });
+            });
+
+            // Pause autoplay on hover
+            const heroSection = document.querySelector('.hero-modern');
+            if (heroSection) {
+                heroSection.addEventListener('mouseenter', stopAutoplay);
+                heroSection.addEventListener('mouseleave', startAutoplay);
+            }
+
+            // Start autoplay on page load
+            startAutoplay();
+        })();
+
+        // Google Maps initialization
+        function initMap() {
+            const location = { lat: 38.091956, lng: 16.1510294 };
+            const map = new google.maps.Map(document.getElementById('google-map'), {
+                zoom: 15,
+                center: location,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry",
+                        "stylers": [{ "color": "#f5f5f5" }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{ "color": "#e9e9e9" }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [{ "color": "#ffffff" }]
+                    }
+                ]
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Centro Jonico Riabilitativo Ce.J.Ri'
+            });
+        }
+    </script>
 </body>
 </html>
