@@ -49,9 +49,9 @@
     <!-- Modern Top Bar -->
     <div class="top-bar" id="topBar">
         <div class="top-bar-content">
-            <h1>CORSO BOBATH BASE - Secondo le norme I.B.I.T.A.</h1>
+            <h1><i class="fa fa-graduation-cap" style="margin-right: 8px;"></i>CORSO BOBATH BASE - Secondo le norme I.B.I.T.A.</h1>
             <div class="top-bar-actions">
-                <button class="top-bar-button" onclick="window.open('https://www.medicalandpsychology.com/cejri/corso-bobath.html', '_blank');">Scopri il Corso</button>
+                <button class="top-bar-button" onclick="window.open('https://www.medicalandpsychology.com/cejri/corso-bobath.html', '_blank');">Scopri il Corso <i class="fa fa-arrow-right" style="margin-left: 4px; font-size: 0.75rem;"></i></button>
                 <button class="top-bar-close" onclick="closeTopBar()" aria-label="Chiudi banner">×</button>
             </div>
         </div>
@@ -568,13 +568,20 @@
         // Top Bar Close Functionality
         function closeTopBar() {
             const topBar = document.getElementById('topBar');
-            topBar.style.display = 'none';
+            topBar.classList.add('banner-hidden');
+            document.body.classList.add('top-bar-closed');
+
+            setTimeout(() => {
+                topBar.style.display = 'none';
+            }, 300);
+
             sessionStorage.setItem('topBarClosed', 'true');
         }
 
         // Check if top bar was closed in this session
         if (sessionStorage.getItem('topBarClosed') === 'true') {
             document.getElementById('topBar').style.display = 'none';
+            document.body.classList.add('top-bar-closed');
         }
 
         // Navbar scroll effect
