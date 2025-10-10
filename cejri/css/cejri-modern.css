@@ -476,6 +476,7 @@ body.top-bar-closed #main-slider.hero-modern {
   min-height: 700px;
   max-height: 900px;
   overflow: hidden;
+  pointer-events: none; /* Prevent scrolling inside hero */
 }
 
 /* Hero Slide */
@@ -565,6 +566,7 @@ body.top-bar-closed #main-slider.hero-modern {
   gap: var(--space-4);
   margin-bottom: var(--space-10);
   flex-wrap: wrap;
+  pointer-events: auto; /* Re-enable clicks for buttons */
 }
 
 .hero-btn-primary {
@@ -578,6 +580,7 @@ body.top-bar-closed #main-slider.hero-modern {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
   display: inline-block;
+  pointer-events: auto; /* Ensure button is clickable */
 }
 
 .hero-btn-primary:hover {
@@ -598,6 +601,7 @@ body.top-bar-closed #main-slider.hero-modern {
   transition: all 0.3s ease;
   border: 2px solid var(--color-border-light);
   display: inline-block;
+  pointer-events: auto; /* Ensure button is clickable */
 }
 
 .hero-btn-secondary:hover {
@@ -718,30 +722,15 @@ body.top-bar-closed #main-slider.hero-modern {
 
 /* Navigation Dots */
 .hero-dots {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: var(--space-3);
-  z-index: 10;
+  display: none; /* Hidden - removed from UI */
 }
 
 .hero-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(37, 99, 235, 0.3);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
+  display: none;
 }
 
 .hero-dot.active {
-  width: 40px;
-  border-radius: var(--radius-full);
-  background: var(--color-primary);
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+  display: none;
 }
 
 /* Navigation Arrows */
